@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box; /* تأكد من أن الحشو والحدود لا تؤثر على الحجم الإجمالي */
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    background-color: white; /* خلفية الموقع باللون الأبيض */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    text-align: center;
+    color: black;
+    padding: 5%; /* استخدام حواف نسبية */
+    width: 90%; /* عرض 90% من نافذة المتصفح */
+    max-width: 800px; /* حد أقصى لعرض الحاوية */
+}
+
+button {
+    margin: 2%; /* استخدام حواف نسبية */
+    padding: 2% 5%; /* استخدام حواف نسبية */
+    font-size: 1.5em; /* جعل حجم الخط طبيعياً */
+    cursor: pointer;
+    border: none; /* إزالة الحدود الافتراضية */
+    border-radius: 15px; /* إضافة حواف دائرية */
+    transition: background-color 0.3s; /* تأثيرات عند التحويم */
+    outline: none; /* إزالة التأثير الافتراضي عند الضغط */
+}
+
+button:hover {
+    background-color: #a05252; /* لون خلفية عند التحويم */
+}
+
+button:active {
+    outline: none; /* إزالة التأثير الافتراضي عند الضغط */
+    background-color: #a05252; /* تأكيد لون الخلفية عند الضغط */
+}
+
+#shammarButton {
+    background-color: #750000; /* لون الخلفية لزر شمر */
+    color: white; /* لون النص */
+}
+
+#otherButton {
+    background-color: #4CAF50; /* لون الخلفية لزر الاخرون */
+    color: white; /* لون النص */
+}
+
+.message {
+    font-size: 3em; /* زيادة حجم الخط */
+    font-weight: bold; /* جعل الخط أثخن */
+    color: black;
+    text-align: center;
+}
